@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/result.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Chart.js の UMD ビルドを読み込む（import エラー対策） -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
+    <title>Result</title>
+</head>
+<body>
+    <h1>これまでの学習結果はこちら！</h1>
+    <button class="back-btn" onclick="location.href='index.html'">入力画面へ戻る</button>
+    <table border="1" id="record-list">
+        <thead>
+            <th>日付</th>
+            <th>学習時間（分）</th>
+        </thead>
+        <tbody>
+            <!-- ここに追加データが挿入される -->
+        </tbody>
+        <tfoot>
+            <th>合計日数</th>
+            <th>合計学習時間</th>
+        </tfoot>
+    </table>
+    <h2>学習の変遷</h2>
+    <!-- チャート表示領域（ラップして明示的なサイズと背景を付与） -->
+    <div id="chart-container">
+        <canvas id="chart"></canvas>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
