@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>StudyRecord</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>プログラミング学習記録</h1>
+
+  <main>
+    <div class="input-area">
+      <input id="date" type="date" placeholder="日付を入力">
+      <!-- "placeholder"=テキストボックス内に記載がないときに表示される薄い文字のこと -->
+      <textarea id="text" placeholder="時間を分単位で入力"></textarea>
+    </div>
+
+    <div class="button-area">
+      <button id="save">記録する</button>
+      <button id="result"onclick="location.href='result.html'">結果を見る</button>
+      <button id="clear">データをリセットする</button>
+    </div>
+  </main>
+  <footer>
+    Nao's study record
+  </footer>
+  <!-- 以下にjsを書いていきます -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
+
+</body>
+
+</html>
